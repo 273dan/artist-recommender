@@ -8,10 +8,10 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 # Manage APIs for Last.fm, Spotify
-SP_API_KEY = '7bcfe76c054249c391ba1e81a3762e3b'
-SP_API_SECRET = 'f9290ebe3e654e07ac2e75434d28d829'
-LASTFM_API_KEY = '46666f11555b6ad680e706253d1872f0'
-LASTFM_API_SECRET = 'd3c8b3a44d7cce62e35eb143a0cf7f96'
+SP_API_KEY = st.secrets['SP_API_KEY']
+SP_API_SECRET = st.secrets['SP_API_SECRET']
+LASTFM_API_KEY = st.secrets['LFM_API_KEY']
+LASTFM_API_SECRET = st.secrets['LFM_API_SECRET']
 
 network = pylast.LastFMNetwork(api_key=LASTFM_API_KEY,api_secret=LASTFM_API_SECRET)
 client_credentials_manager = SpotifyClientCredentials(client_id=SP_API_KEY,client_secret=SP_API_SECRET)    
