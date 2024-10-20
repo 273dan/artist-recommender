@@ -1,4 +1,0 @@
-pandas
-sklearn
-pylast
-spotipy
